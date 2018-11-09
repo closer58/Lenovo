@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<view class="section">
+  <input placeholder="搜索商品" auto-focus/>
+</view>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" circular='true' interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="800" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="group">
+  <view wx:for="{{iconColor}}">
+    <icon type="success" size="13" color="{{item}}"/>
+    官方正品
+  </view>
+   <view wx:for="{{iconColor}}">
+    <icon type="success" size="13" color="{{item}}"/>
+    价格优惠
+  </view> 
+  <view wx:for="{{iconColor}}">
+    <icon type="success" size="13" color="{{item}}"/>
+    七天退换
+  </view><view wx:for="{{iconColor}}">
+    <icon type="success" size="13" color="{{item}}"/>
+    售后安心
+  </view>
+</view>
+<view class='nav'>
+  <view class='nav1'>
+  <image src='../../assets/price.png'></image> 
+  砍价
+  </view>
+  <view class='nav1'>
+  <image src='../../assets/mall.png'></image> 
+  门店
+  </view>
+  <view class='nav1'>
+  <image src='../../assets/red.png'></image> 
+  双11
+  </view>
+
+</view>
+<view class='title'>
+明星单品
+</view>
+
+<scroll-view class='sco'>
+
+<view class='com' wx:for="{{commodity}}" wx:key="{{item.id}}">
+
+<image src='https://m.360buyimg.com/n6/{{item.image_url}}'></image>
+<text class='txt1'>{{item.title}}</text>
+<text class='txt2'>￥{{item.price}}</text>
+<button class='detail' bindtap='toDetail' data-id='{{item.id}}'
+data-title='{{item.title}}' data-price='{{item.price}}' data-img='https://m.360buyimg.com/n6/{{item.image_url}}' >查看</button>
+
+</view>
+
+
+</scroll-view>

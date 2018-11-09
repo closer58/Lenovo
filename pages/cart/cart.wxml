@@ -1,0 +1,20 @@
+<!--pages/cart/cart.wxml-->
+
+<view wx:for="{{cart}}" wx:key="{{item.id}}" class='main'>
+<switch class='box' type="checkbox" checked="{{Checked}}" bindchange="switch2Change"/>
+<image wx:if="{{item.img}}" src="{{item.img}}"></image>
+<image wx:if="{{item.image_url}}" src="https://m.360buyimg.com/n6/{{item.image_url}}"></image>
+<view class='t1'>{{item.title}}</view>
+<view class='t2'>￥{{item.price}} </view>
+
+<view class='reduce' bindtap='reduceToCart' data-id='{{item.id}}'>-</view>
+<view class='count'>{{item.count}}</view>
+<view class='add' bindtap='decCart' data-id='{{item.id}}'>+</view>
+
+
+
+
+
+
+
+</view>

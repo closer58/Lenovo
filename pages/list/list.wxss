@@ -1,0 +1,91 @@
+
+
+page{
+  height: 100%;
+}
+
+body{
+  position: relative;
+}
+.title{
+  width: 100%;
+  height: 60rpx;
+  text-align: center;
+  position: fixed;
+  background: #fff;
+  margin-top: -120rpx;
+  z-index: 999;
+}
+.choose{
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  margin-top: -60rpx;
+  z-index: 999;
+}
+.choose button{
+  width: 33%;
+  float: left;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #f2f2f0;
+  
+  
+  
+}
+.sco{
+  margin-top: 120rpx;
+  height: 100%;
+}
+.com{
+  
+  width: 300rpx;
+  height: 450rpx;
+  border: 1px solid #f2f2f0;
+  float: left;
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+  position: relative;
+}
+.com image{
+  height: 50%;
+  width: 100%
+}
+.txt1{
+  font-size: 10px;
+  display: inline-block;
+  height: 150rpx;
+}
+.txt2{
+  font-size: 14px;
+  width: 150rpx;
+  height: 40rpx;
+  color: rgb(248, 107, 14);
+  margin-bottom: 20rpx;
+}
+.add{
+ width:163rpx;
+height:40rpx;
+margin-left:138rpx;
+line-height:40rpx;
+font-size:10px;
+border: 1px solid rgb(45, 203, 243);
+position: absolute;
+left:0px;
+top: 193px;
+
+}
+.detail{
+ width:103rpx;
+height:40rpx;
+margin-left:38rpx;
+line-height:40rpx;
+font-size:10px;
+border: 1px solid rgb(45, 203, 243);
+position: absolute;
+left:76px;
+top:173px;
+
+}

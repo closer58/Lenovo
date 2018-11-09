@@ -1,0 +1,48 @@
+/* pages/mine/mine.wxss */
+.userinfo {
+  display: flex;
+  
+  align-items: center;
+  background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541430563729&di=c51ef98a10133a7d1778fc743a75a1a7&imgtype=0&src=http%3A%2F%2Fbpic.ooopic.com%2F16%2F65%2F17%2F16651782-3e1ac9bdd40073df0991f36ace9a10fd-0.jpg)no-repeat center center;
+}
+.mine{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f0;
+  height: 80%;
+}
+.userinfo-nickname{
+  color: black;
+}
+.m1{
+  width: 100%;
+  height: 80rpx;
+  background-color: #fff;
+  border: 1px solid #f2f2f0;
+  margin-top: 40rpx;
+  line-height: 80rpx;
+  padding-left: 30rpx;
+  font-size: 14px;
+  
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+image{
+  width: 30rpx;
+  height: 30rpx;
+  float: right;
+  margin-top: 20rpx;
+  margin-right: 40rpx;
+}
+
+
+.usermotto {
+  margin-top: 200px;
+}

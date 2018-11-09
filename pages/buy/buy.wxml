@@ -1,0 +1,26 @@
+<!--pages/buy/buy.wxml-->
+
+<view class='f1'><text class='t4'>收货地址</text></view>
+<view class='f2'>
+<image class='location' src='../../assets/location.png' bindtap='onGetLocation'></image>
+<text>{{locationCity}}</text>
+
+</view>
+
+<view class='info'> 
+<view >购物清单</view>
+<image class='img'  src='{{img}}'></image>
+<view class='txt1'>{{title}}</view>
+<view class='txt2'>￥{{price}}</view>
+<view class='gift'>赠品 联想一键服务鼠标N91黑款</view>
+
+</view>
+<view class='f1'><text class='t4'>配送方式</text></view>
+
+<view class='f2'><switch class='box' type="checkbox" checked="{{Checked}}" bindchange="switch2Change"/><text class='t4'> 快递</text></view>
+<view class='f1'><text class='t4'>发票信息</text></view>
+<view class='f2'><text class='t4'>电子信息 个人</text></view>
+<view class='f1'><text class='t4'>优惠信息</text></view>
+<view class='f2'><text class='t4'>无</text></view>
+
+<button class='pay' bindtap='payIt'>使用微信支付</button>

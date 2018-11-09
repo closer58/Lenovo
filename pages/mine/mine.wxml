@@ -1,0 +1,41 @@
+<!--pages/mine/mine.wxml-->
+
+ <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      
+    </block>
+  </view>
+  <view class='mine'>
+    <view class='m1'>
+   我的订单
+   
+   <image src='../../assets/r.png'></image>
+  </view>
+    <view class='m1'>
+   我的预约
+   <image src='../../assets/r.png'></image>
+  </view> 
+   <view class='m1'>
+   我的优惠卷
+   <image src='../../assets/r.png'></image>
+  </view>  
+  <view class='m1'>
+   我的砍价
+   <image src='../../assets/r.png'></image>
+  </view> 
+   <view class='m1'>
+   我的足迹
+   <image src='../../assets/r.png'></image>
+  </view> 
+   <view class='m1'>
+   联系客服
+   <image src='../../assets/r.png'></image>
+  </view>
+    <view class='m1'>
+   切换账户
+   <image src='../../assets/r.png'></image>
+  </view>
+  </view>

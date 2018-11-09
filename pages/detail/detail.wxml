@@ -1,0 +1,25 @@
+<image src='{{img}}'></image>
+<view class='txt'>
+<text class='txt1'>{{title}}</text>
+
+</view>
+<text class='txt2'>￥{{price}}</text>
+
+<view class='txt3'>
+<text >【定制说明】私人订制机型暂时不支持在小程序上购买，您可以浏览联想PC，App或Wap商城进行选购。</text>
+</view>
+
+<view class='footer'>
+<navigator url='/pages/cart/cart'> 
+<image src='../../assets/cart.png' class='ct'></image>
+</navigator>
+
+
+<button class='add' bindtap='addToCart' data-id='{{item.id}}'data-price='{{item.price}}'
+data-title='{{item.title}}' data-img='https://m.360buyimg.com/n6/{{item.image_url}}'
+>加入购物车</button>
+<button class='buy' bindtap='tobuy' data-title='{{title}}' 
+data-img='{{img}}'data-price='{{price}}'
+>立即购买</button>
+</view>
+

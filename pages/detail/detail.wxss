@@ -1,0 +1,53 @@
+image{
+  width: 100%;
+  height: 600rpx;
+}
+.txt{
+width: 100%;
+height: 140rpx;
+margin-top: 20rpx;
+
+}
+
+.txt1{
+font-size: 14px;
+}
+.txt2{
+  font-size:25px;
+color:#f98763;
+
+
+}
+.footer{
+  height: 100rpx;
+  width: 100%;
+  margin-top: 175rpx;
+
+}
+.ct{
+  width: 10%;
+  height: 60rpx;
+  float: left;
+  margin-top: 20rpx;
+}
+.add{
+  width: 45%;
+  height: 100rpx;
+   float: left;
+   background-color: #f98763;
+   border: 1px solid #f98763;
+   color: white;
+}
+.buy{
+  width: 45%;
+  height: 100rpx;
+  background-color: #f4164f;
+  border: 1px solid #f4164f;
+   color: white;
+}
+
+.txt3{
+  font-size: 13px;
+  color: #ef0bb7;
+  margin-top: 30rpx;
+}
